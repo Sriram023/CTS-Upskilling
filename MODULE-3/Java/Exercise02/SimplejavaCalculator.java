@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
-public class SimpleCalculator {
+public class SimplejavaCalculator {
 
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("JAVA CALCULATOR");
+        System.out.println("SIMPLE JAVA CALCULATOR");
         System.out.print(" Enter First Number  : ");
-        double num1 = sc.nextDouble();
+        double number1 = sc.nextDouble();
 
         System.out.print(" Enter Second Number : ");
-        double num2 = sc.nextDouble();
+        double number2 = sc.nextDouble();
 
         System.out.println("\n================ MENU ================");
         System.out.println(" 1. Addition");
@@ -27,20 +27,20 @@ public class SimpleCalculator {
 
         switch (choice) {
             case 1:
-                System.out.println(" Addition Result       : " + (num1 + num2));
+                System.out.println(" Addition Result       : " + (number1 + number2));
                 break;
 
             case 2:
-                System.out.println(" Subtraction Result    : " + (num1 - num2));
+                System.out.println(" Subtraction Result    : " + (number1 - number2));
                 break;
 
             case 3:
-                System.out.println(" Multiplication Result : " + (num1 * num2));
+                System.out.println(" Multiplication Result : " + (number1 * number2));
                 break;
 
             case 4:
-                if (num2 != 0) {
-                    System.out.println(" Division Result       : " + (num1 / num2));
+                if (number2 != 0) {
+                    System.out.println(" Division Result       : " + (number1 / number2));
                 } else {
                     System.out.println(" Error: Cannot divide by zero!");
                 }
